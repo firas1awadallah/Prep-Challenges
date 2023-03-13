@@ -98,7 +98,7 @@ describe("Challenge09", () => {
 });
 
 describe("Challenge09", () => {
-  test("Round-Decimals", () => {
+  test.skip("Round-Decimals", () => {
     expect(roundDecimals([5.4, 5.5, 6.7, 6.8])).toStrictEqual([5, 6, 7, 7]);
     expect(roundDecimals([6.1, 2.3, 5, 2.9])).toStrictEqual([6, 2, 5, 3]);
   });

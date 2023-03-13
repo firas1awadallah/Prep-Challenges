@@ -23,8 +23,7 @@ const arrInc = (arr) => {
     
     arr.forEach(element => result.push (element+10));
     return result;
-
-    return result;
+    
 }
 // -------------------------------------------------------------------------------------------------------
 
