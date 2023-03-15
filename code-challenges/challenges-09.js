@@ -111,7 +111,9 @@ const roundDecimals = (arr) => {
 //
 
 const employeesBonus = (arr) => {
-    // write your code here
+    let result = [];
+   arr[this].w
+    return result;
 }
 // -------------------------------------------------------------------------------------------------------
 
