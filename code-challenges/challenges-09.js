@@ -111,7 +111,19 @@ const roundDecimals = (arr) => {
 //
 
 const employeesBonus = (arr) => {
-    // write your code here
+   
+    
+     
+    arr.forEach(element => {
+        
+      if (element.workHours > 8){
+            element.salary = `${parseInt(element.salary)+100}$`;
+        }
+        else if(element.workHours <= 8){
+           element.salary = `${parseInt(element.salary)+50}$`;
+        }
+       });
+    return arr;
 }
 // -------------------------------------------------------------------------------------------------------
 
