@@ -45,7 +45,7 @@
         {
             "language": "javascript",
             "source": [
-                ""
+                "function encryption(s) {\n    const ceil = Math.ceil(Math.sqrt(s.length));\n     \n    let temp = s;\n    let array = [];\n       \n    while(temp) {\n         array = array.concat(temp.substring(0, ceil));\n         temp = temp.substring(ceil)\n    }\n \n    let result = [];\n   \n    for(let i = 0 ; i < ceil; i++) {\n         result = result.concat(\n             array.reduce((r, v) => {\n                 return r + (v[i] || \"\")\n         }, \"\")\n     )\n    };\n    return result.join(' ');\n }"
             ],
             "outputs": []
         },
@@ -59,7 +59,7 @@
         {
             "language": "javascript",
             "source": [
-                ""
+                "function timeInWords(h, m) {\n    // Write your code here\nlet nums = [ \"zero\", \"one\", \"two\", \"three\", \"four\",\n                            \"five\", \"six\", \"seven\", \"eight\", \"nine\",\n                            \"ten\", \"eleven\", \"twelve\", \"thirteen\",\n                            \"fourteen\", \"fifteen\", \"sixteen\", \"seventeen\",\n                            \"eighteen\", \"nineteen\", \"twenty\", \"twenty one\",\n                            \"twenty two\", \"twenty three\", \"twenty four\",\n                            \"twenty five\", \"twenty six\", \"twenty seven\",\n                            \"twenty eight\", \"twenty nine\",\n                        ];\n        \n        if (m == 0)\n            return(nums[h] + \" o' clock \" );\n        \n        else if (m == 1)\n            return(\"one minute past \" + nums[h] );\n        \n        else if (m == 59)\n            return(\"one minute to \" +\n                                nums[(h % 12) + 1] );\n        \n        else if (m == 15)\n            return(\"quarter past \" + nums[h] );\n        \n        else if (m == 30)\n            return(\"half past \" + nums[h] );\n        \n        else if (m == 45)\n           return(\"quarter to \" + nums[(h % 12) + 1]  );\n        \n        else if (m <= 30)\n            return( nums[m] + \" minutes past \" + nums[h]);\n        \n        else if (m > 30)\n            return( nums[60 - m] + \" minutes to \" + nums[(h % 12) + 1]  );\n    \n}\n"
             ],
             "outputs": []
         }
